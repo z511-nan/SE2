@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>副教授</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .content{
+
+        }
+        div.list{
+            display: inline-block;
+            position:relative;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+        div.list h3 {
+            background: midnightblue;
+            color: white;
+            padding: 10px 20px;
+
+        }
+        div.list ul li {
+            list-style: none;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        div.list ul li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 15px 25px;
+            transition: background-color 1s,color 1s;
+        }
+        div.list ul li a:hover {
+            background: lightskyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="header_index"></div>
+<div class="content">
+<div class="list">
+    <h3>副教授</h3>
+    <ul>
+        <li><a href="lily.html" >李莉</a></li>
+        <li><a href="gu.html">谷志新</a> </li>
+        <li><a href="liudan.html">刘丹</a></li>
+    </ul>
+</div>
+</div>
+
+
+
+
+<div class="footer_index"></div>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/common.js"></script>
+</div>
+</body>
+<script>
+    $(".header_index").load("header.html")
+    $(".footer_index").load("footer.html")
+</script>
+
+</html>

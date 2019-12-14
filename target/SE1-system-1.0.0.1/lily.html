@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>副教授</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #flex{
+            display: flex;
+        }
+
+        #flex .list{
+            display: inline-block;
+            position:relative;
+            margin: 100px;
+            width: 400px;
+
+        }
+        #flex .list h3 {
+            background: midnightblue;
+            color: white;
+            padding: 10px 20px;
+
+        }
+        #flex .list ul li {
+            list-style: none;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        #flex .list ul li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 15px 25px;
+            transition: background-color 1s,color 1s;
+        }
+        #flex .list ul li a:hover {
+            background: lightskyblue;
+            color: white;
+        }
+
+        #l1{
+            background: lightskyblue;
+            color: white;
+        }
+        #flex>.list{
+            flex-basis: 20%;
+        }
+        #flex>.section{
+            flex-basis: 80%;
+        }
+
+        #flex .section {
+            display:table-cell;
+            text-align:center;
+            vertical-align:middle;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header_index"></div>
+
+<div id="flex" class="content">
+    <div class="list">
+        <h3>副教授</h3>
+        <ul>
+            <li><a href="#" id="l1">李莉</a></li>
+            <li><a href="gu.html" id="l2">谷志新</a> </li>
+            <li><a href="liudan.html" id="l3">刘丹</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <p class="p1_img"><figure><img border="0" src="images/lily.jpg"></figure></p>
+        <p class="p2_end">李莉，博士，副教授，软件工程专业主任，专业教工党支部书记，硕士生导师。主要研究方向：先进软件工程技术、群智能优化、大型分布式计算。主持和参加国家级、省部级各类科学研究项目、教学研究项目10余项，各级各类科研及教学获奖5项，多次获得东北林业大学教学质量优秀奖、教书育人先进个人，获得东北林业大学青年教师授课大赛二等奖，信息与计算机工程学院教师授课精英赛第一名。获得2016年东北林业大学“我最喜爱的十佳教师”称号。主持重点课程、精品在线课程、线上线下建设课程各1门。拥有专利权3项。在国内外核心期刊及国际学术会议上发表学术论文 10余篇，编写教材3部。美国University of California Riverside访问学者。
+
+        </p>
+    </div>
+</div>
+<div class="footer_index"></div>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+<script>
+    $(".header_index").load("header.html")
+    $(".footer_index").load("footer.html")
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/pan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        //点击刷新验证码
+        function changeCode(){
+
+            document.getElementById("CreateCheckCode").src =
+                document.getElementById("CreateCheckCode").src+ "?nocache=" + new Date().getTime();
+
+        }
+    </script>
+
+</head>
+<body>
+<h3>东北林业大学软件工程专业平台</h3>
+<div class="main">
+    <h4>登录集成平台</h4>
+    <form  action="/LoginServlet" method="post">
+        <input type="text" class="name" id="username" name="userName" placeholder="用户名" required="">
+        <input type="password" class="password" name="pwd" id="password" placeholder="密码" required="">
+        <input class="verifyInput"  name="verifyInput" placeholder="请输入验证码">
+
+        <img  id="CreateCheckCode" onclick="changeCode()" src="pictureCheckCode"> <p style="display: inline-block" class="captcha">看不清？ 点击图片刷一张</p>
+
+
+
+
+        <input type="submit" value="登录">
+    </form>
+</div>
+<div class="footer">
+    <p> &copy; University 2019&nbsp;-&nbsp;Copyright&nbsp;by&nbsp;东北林业大学</p>
+</div>
+</body>
+</html>
